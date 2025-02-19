@@ -1,0 +1,56 @@
+.logos-slider {
+  width: 100%;
+  height: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.logos-container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logos-wrapper {
+  display: flex;
+}
+
+.logo {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 50px;
+  width: auto;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.arrow img {
+  height: 30px;
+  width: auto;
+}
+
+@media screen and (max-width: 635px) {
+  .logos-container {
+    max-width: 320px;
+  }
+}
