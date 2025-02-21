@@ -76,8 +76,8 @@ LAYER-SIMPLE
 1. **Clone the repository**:
 
 ```bash
-   git clone https://gitlab.ideo.pl/m.koszyk/layout-simple
-   cd layout-simple
+   git clone https://github.com/dawidolko/Layout-Simple-Vue
+   cd layout-simple-vue
 ```
 
 2. **Install dependencies**:
