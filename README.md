@@ -1,186 +1,309 @@
-# Layout-Simple (Vue.js)
+# Layout-Simple-Vue
 
-**Layout-Simple** is a simple business website layout built with **Vue.js**, structured into components with separate data files.
+> 🚀 **Modern Business Website Layout** - Build responsive corporate websites with Vue.js component architecture and modular design
 
----
+## 📋 Description
 
-## Project Structure
+Welcome to the **Layout-Simple** repository! This Vue.js-based business website demonstrates a professional, component-driven architecture with clean separation of data and presentation. The project features a fully responsive layout, modular components, carousel sliders, newsletter subscription, and dynamic content rendering.
+
+Built with Vue.js 3 and organized with separate data files for easy content management, this project showcases best practices in modern frontend development. Perfect for learning component-based architecture, responsive design patterns, and maintainable code structure for corporate websites.
+
+## 📁 Repository Structure
 
 ```
-LAYER-SIMPLE
-├── frontend/
-│ ├── node_modules/
-│ ├── public/
-│ │ ├── index.html
-│ ├── src/
-│ │ ├── assets/ (Logo and other assets)
-│ │ ├── components/ (Vue components)
-│ │ │ ├── Aktualnosci.vue
-│ │ │ ├── Branze.vue
-│ │ │ ├── Footer.vue
-│ │ │ ├── LogaFirm.vue
-│ │ │ ├── Navbar.vue
-│ │ │ ├── Produkty.vue
-│ │ │ ├── Sidebar.vue
-│ │ │ ├── Slider.vue
-│ │ │ ├── Uslugi.vue
-│ │ ├── data/ (Data files)
-│ │ │ ├── AktualnosciData.js
-│ │ │ ├── BranzeData.js
-│ │ │ ├── FooterData.js
-│ │ │ ├── ProduktyData.js
-│ │ │ ├── SliderData.js
-│ │ │ ├── UslugiData.js
-│ │ ├── styles/ (CSS files for components)
-│ │ ├── views/ (Views)
-│ │ │ ├── HomeView.vue
-│ │ ├── App.vue
-│ │ ├── main.js
-│ ├── .gitignore
-│ ├── package.json
-│ ├── package-lock.json
-│ ├── README.md
-│ ├── start.bat (Windows startup script)
-│ ├── start.sh (Linux/macOS startup script)
-├── grafika/ (Screenshots, PSD files)
-│ ├── simple 320.jpg
-│ ├── simple 768.jpg
-│ ├── simple.jpg
-├── LICENSE
-├── CHANGELOG
+
+Layout-Simple-Vue/
+├── 📁 frontend/
+│ ├── 📁 public/
+│ │ └── 📄 index.html # Main HTML entry point
+│ ├── 📁 src/
+│ │ ├── 🖼️ assets/ # Logo and media resources
+│ │ ├── ⚛️ components/ # Vue components
+│ │ │ ├── 📰 Aktualnosci.vue # News section
+│ │ │ ├── 🏭 Branze.vue # Industries section
+│ │ │ ├── 📧 Footer.vue # Footer with contact form
+│ │ │ ├── 🏢 LogaFirm.vue # Partner company logos
+│ │ │ ├── 🧭 Navbar.vue # Main navigation
+│ │ │ ├── 📦 Produkty.vue # Products display
+│ │ │ ├── 📋 Sidebar.vue # Sidebar menu
+│ │ │ ├── 🎬 Slider.vue # Image carousel
+│ │ │ └── 🛠️ Uslugi.vue # Services section
+│ │ ├── 📊 data/ # Separated data files
+│ │ │ ├── AktualnosciData.js # News content data
+│ │ │ ├── BranzeData.js # Industries data
+│ │ │ ├── FooterData.js # Footer information
+│ │ │ ├── ProduktyData.js # Products data
+│ │ │ ├── SliderData.js # Carousel images
+│ │ │ └── UslugiData.js # Services data
+│ │ ├── 🎨 styles/ # Component CSS files
+│ │ │ ├── NavbarStyle.css
+│ │ │ ├── SidebarStyle.css
+│ │ │ ├── SliderStyle.css
+│ │ │ ├── BranzeStyle.css
+│ │ │ ├── ProduktyStyle.css
+│ │ │ ├── UslugiStyle.css
+│ │ │ └── FooterStyle.css
+│ │ ├── 📄 views/ # Page views
+│ │ │ └── HomeView.vue
+│ │ ├── 💻 App.vue # Main application component
+│ │ └── 🚀 main.js # Vue entry point
+│ ├── 📦 package.json # Node.js dependencies
+│ ├── 🔒 package-lock.json # Dependency lock file
+│ ├── 🔧 start.bat # Windows startup script
+│ ├── 🔧 start.sh # Linux/macOS startup script
+│ └── 📖 README.md # Frontend documentation
+├── 📁 grafika/ # Screenshots and design files
+│ ├── 🖼️ simple.jpg # Desktop preview
+│ ├── 📱 simple 768.jpg # Tablet preview
+│ ├── 📱 simple 320.jpg # Mobile preview
+│ └── 🎨 \*.psd # Photoshop design files
+├── 📝 CHANGELOG # Version history
+├── 📄 LICENSE # Project license
+└── 📖 README.md # Main documentation
+
 ```
 
----
+## 🚀 Getting Started
 
-## Technologies
-
-- **Vue.js 3** – Modern frontend framework
-- **CSS (separate stylesheets for components)** – UI styling
-- **JavaScript (ES6+)** – Component logic and data handling
-- **Node.js + npm** – Dependency management
-
----
-
-## Features
-
-✅ **Responsive Layout** – Adapts to different screen sizes
-✅ **Component-Based Structure** – Modular and easy to edit
-✅ **Separate Data Files** – Text and content stored separately
-✅ **CSS Styling** – Each component has its own styles
-✅ **Startup Scripts** – Easy project initialization
-
----
-
-## Installation
-
-1. **Clone the repository**:
+### 1. Clone the Repository
 
 ```bash
-   git clone https://github.com/dawidolko/Layout-Simple-Vue
-   cd layout-simple-vue
+git clone https://github.com/dawidolko/Layout-Simple-Vue.git
+cd Layout-Simple-Vue
 ```
 
-2. **Install dependencies**:
+### 2. Install Dependencies
 
 ```bash
-   npm install
+cd frontend
+npm install
 ```
 
----
+### 3. Start Development Server
 
-## ▶️ Running the Project
-
-**Windows**:
+#### Windows:
 
 ```bash
 start.bat
 ```
 
-**Linux/macOS**:
+#### Linux/macOS:
 
 ```bash
 bash start.sh
 ```
 
-Or manually:
+#### Manual Start:
 
 ```bash
 npm run dev
 ```
 
-The project should open on the default address:  
-[http://localhost:8000](http://localhost:8000)
+- Access the application at [http://localhost:8000](http://localhost:8000)
 
----
+## ⚙️ System Requirements
 
-## Component Breakdown
+### **Essential Tools:**
+
+- **Node.js** (version 14.0 or higher)
+- **npm** or **yarn** package manager
+- **Modern Web Browser** (Chrome, Firefox, Safari, Edge)
+- **Git** for version control
+
+### **Development Environment:**
+
+- **Vue.js 3** with Composition API
+- **Code Editor** (VS Code, WebStorm, Sublime Text)
+- **Vue DevTools** browser extension (recommended)
+
+### **Recommended Extensions:**
+
+- **Volar** for Vue 3 support in VS Code
+- **ESLint** for JavaScript code quality
+- **Prettier** for code formatting
+- **Live Server** for development
+- **Vue VSCode Snippets** for faster development
+
+### **Vue.js Ecosystem:**
+
+- **Vue 3** - Progressive JavaScript framework
+- **Vue Router** (if routing is needed)
+- **ES6+** modern JavaScript features
+- **CSS3** for styling
+
+## ✨ Key Features
+
+### **🧭 Navigation System**
+
+- **Navbar Component**: Main navigation with sections (Industries, Products, Services, News, Contact, References)
+- **Sidebar Component**: Extended menu with social media links (Facebook, LinkedIn)
+- Responsive mobile-friendly navigation
+- Smooth scrolling to sections
+
+### **🎬 Interactive Slider**
+
+- Image carousel with automatic rotation
+- Newsletter subscription form integration
+- Touch-friendly swipe support
+- Responsive image loading
+
+### **🏭 Industries Section (Branze)**
+
+- 9 industry categories with interactive hover effects
+- Gray background transition on hover
+- Grid-based responsive layout
+- Icon and text combinations
+
+### **📦 Products Display (Produkty)**
+
+- 10 circular product elements
+- Modern card-based design
+- Hover animations and effects
+- Responsive grid system
+
+### **🛠️ Services Section (Uslugi)**
+
+- Service icons with descriptions
+- Clean, professional presentation
+- Icon-text combinations
+- Flexible content management
+
+### **📰 News Section (Aktualnosci)**
+
+- News article slider/carousel
+- Dynamic content loading from data files
+- Image and text preview cards
+- Read more functionality
+
+### **📧 Footer with Contact**
+
+- Contact form with validation
+- Company contact details
+- Social media integration
+- Partner company logos slider
+
+### **📊 Data-Driven Architecture**
+
+- Separate data files in `data/` directory
+- Easy content updates without touching components
+- Centralized content management
+- JSON-like data structure
+
+### **🎨 Modular Styling**
+
+- Component-specific CSS files
+- Maintainable and scalable styles
+- No style conflicts between components
+- Easy customization and theming
+
+### **📱 Responsive Design**
+
+- Mobile-first approach (320px, 768px, desktop)
+- Flexbox and CSS Grid layouts
+- Touch-friendly interface
+- Cross-browser compatibility
+
+## 🛠️ Technologies Used
+
+- **Vue.js 3** - Modern progressive JavaScript framework
+- **JavaScript (ES6+)** - Component logic and interactivity
+- **CSS3** - Styling with component-specific stylesheets
+- **HTML5** - Semantic markup structure
+- **Node.js** - Development environment
+- **NPM** - Package management
+- **Git** - Version control
+
+## 🖼️ Preview
+
+### Desktop View
+
+[<img src="tasks/simple.jpg" width="80%" alt="Desktop Preview"/>](tasks/simple.jpg)
+
+## 📖 Component Overview
 
 ### **Navbar.vue**
 
-- Main navigation (Industries, Products, Services, News, Contact, References)
+Main navigation bar with menu items and responsive behavior for mobile devices.
 
 ### **Sidebar.vue**
 
-- Sidebar menu (Menu, Industries, Products, Services, News, Contact, About Us, Awards, Investor Relations, Partners, Careers, Customer Zone)
-- Social media icons (Facebook, LinkedIn)
+Extended sidebar menu with additional links including: Menu, Industries, Products, Services, News, Contact, About Us, Awards, Investor Relations, Partners, Careers, Customer Zone. Includes social media icons.
 
 ### **Slider.vue**
 
-- Image carousel
-- Newsletter subscription form
+Image carousel component with newsletter subscription form and automatic slide rotation.
 
 ### **Branze.vue**
 
-- 9 industries (hover effect: background turns gray)
+Industries section displaying 9 different industry categories with interactive hover effects (background turns gray).
 
 ### **Produkty.vue**
 
-- 10 circular elements with product names
+Products display featuring 10 circular elements with product names in a responsive grid layout.
 
 ### **Uslugi.vue**
 
-- Service icons + descriptions
+Services section with icons and descriptions showcasing company offerings.
 
 ### **Aktualnosci.vue**
 
-- News slider
+News section with article slider displaying latest company news and updates.
 
 ### **Footer.vue**
 
-- Contact section (form, contact details, social media)
-- Partner company logos slider
+Contact section with form, contact details, social media links, and partner company logos slider.
+
+### **LogaFirm.vue**
+
+Partner company logos carousel in the footer section.
+
+## 📝 Content Management
+
+All content and text data are stored in separate files in the `src/data/` directory:
+
+- **AktualnosciData.js** - News articles and updates
+- **BranzeData.js** - Industry categories and descriptions
+- **FooterData.js** - Contact information and footer content
+- **ProduktyData.js** - Product names and details
+- **SliderData.js** - Carousel images and captions
+- **UslugiData.js** - Service descriptions and icons
+
+This separation allows easy content updates without modifying Vue components.
+
+## 🎨 Styling Guide
+
+Each component has a dedicated CSS file in `src/styles/` for easy customization:
+
+- Modify colors, fonts, and spacing in individual style files
+- Maintain consistency across components
+- No style conflicts due to component-scoped CSS
+- Easy theme implementation
+
+## 📊 Project Status
+
+✅ **Completed** - Fully functional business website layout!
+
+## 🤝 Contributing
+
+Contributions are highly welcomed! Here's how you can help:
+
+- 🐛 **Report bugs** - Found an issue? Let us know!
+- 💡 **Suggest improvements** - Have ideas for better features?
+- 🔧 **Submit pull requests** - Share your enhancements and solutions
+- 📖 **Improve documentation** - Help make the project clearer
+
+Feel free to open issues or reach out through GitHub for any questions or suggestions.
+
+## 👨‍💻 Author
+
+Created by **Dawid Olko** - Developed as part of **PHP Developer internship program**.
+
+Original Repository: [GitLab - layout-simple](https://gitlab.ideo.pl/m.koszyk/layout-simple)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-## Styling
-
-Each component has a separate CSS file in the `src/styles/` directory. Examples:
-
-- `NavbarStyle.css`
-- `SidebarStyle.css`
-- `SliderStyle.css`
-- `BranzeStyle.css`
-- `ProduktyStyle.css`
-- `UslugiStyle.css`
-- `FooterStyle.css`
-
----
-
-## Additional Information
-
-- All content and text data are stored in the `data/` directory, allowing easy modification without changing Vue components.
-- CSS files in `styles/` allow flexible customization of the website appearance.
-- The startup scripts `start.bat` and `start.sh` simplify project execution.
-
----
-
-## Author
-
-Project created as part of **internship as a PHP Developer**  
-GitHub Repository: [https://gitlab.ideo.pl/m.koszyk/layout-simple](https://gitlab.ideo.pl/m.koszyk/layout-simple)
-
----
-
-## Project Status
-
-**In Development** – Finished!
+⭐ **Found this helpful?** Give it a star and share with fellow Vue.js developers!
