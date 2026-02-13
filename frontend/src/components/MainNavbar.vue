@@ -3,7 +3,7 @@
     <div class="navbar-inner">
       <div class="center-section">
         <div class="logo-container">
-          <img src="@/assets/logo-icon.png" alt="Logo" class="logo1" />
+          <img src="@/assets/logo-icon.webp" alt="Logo" class="logo1" />
         </div>
         <ul class="nav-links">
           <li><a href="#branze">Branże</a></li>
@@ -16,7 +16,7 @@
       </div>
       <div class="search-container">
         <img
-          src="@/assets/search-icon.png"
+          src="@/assets/search-icon.webp"
           alt="Search"
           class="search-icon"
           @click="toggleSearch" />

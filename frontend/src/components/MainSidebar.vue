@@ -29,12 +29,12 @@
       <hr style="max-width: 75%; margin-bottom: 30px" />
       <div class="section social">
         <img
-          src="@/assets/fb-icon.png"
+          src="@/assets/fb-icon.webp"
           alt="Facebook"
           class="social-icon"
           style="width: 14px" />
         <img
-          src="@/assets/linkedin-icon.png"
+          src="@/assets/linkedin-icon.webp"
           alt="LinkedIn"
           class="social-icon" />
       </div>

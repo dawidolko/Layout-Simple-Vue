@@ -1,13 +1,13 @@
 <template>
   <section id="aktualnosci" class="news-section">
     <div class="news-section-header">
-      <img src="@/assets/reload-icon.png" alt="Reload Icon" class="icon4" />
+      <img src="@/assets/reload-icon.webp" alt="Reload Icon" class="icon4" />
       <h1>AKTUALNOŚCI</h1>
     </div>
     <hr class="news-section-line" />
     <div class="news-section-slider">
       <button class="news-arrow left-arrow" @click="prevNewsSlide">
-        <img src="@/assets/left-side.png" alt="Left Arrow" />
+        <img src="@/assets/left-side.webp" alt="Left Arrow" />
       </button>
       <div class="news-slider-container">
         <div
@@ -33,7 +33,7 @@
         </div>
       </div>
       <button class="news-arrow right-arrow" @click="nextNewsSlide">
-        <img src="@/assets/right-side.png" alt="Right Arrow" />
+        <img src="@/assets/right-side.webp" alt="Right Arrow" />
       </button>
     </div>
   </section>

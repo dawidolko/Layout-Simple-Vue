@@ -5,28 +5,28 @@ export default {
       // Główna tablica elementów
       newsItems: [
         {
-          image: require("@/assets/aktualnosci1.png"),
+          image: require("@/assets/aktualnosci1.webp"),
           date: "1.06.2013",
           title: "LOREM IPSUM",
           description:
             "lorem ipsum, lorem ipsum lorem ipsum lorem lorem ipsum ipsum.",
         },
         {
-          image: require("@/assets/aktualnosci2.png"),
+          image: require("@/assets/aktualnosci2.webp"),
           date: "1.06.2013",
           title: "LOREM IPSUM",
           description:
             "lorem ipsum, lorem ipsum lorem ipsum lorem lorem ipsum ipsum.",
         },
         {
-          image: require("@/assets/aktualnosci3.png"),
+          image: require("@/assets/aktualnosci3.webp"),
           date: "1.06.2013",
           title: "LOREM IPSUM",
           description:
             "lorem ipsum, lorem ipsum lorem ipsum lorem lorem ipsum ipsum.",
         },
         {
-          image: require("@/assets/aktualnosci4.png"),
+          image: require("@/assets/aktualnosci4.webp"),
           date: "1.06.2013",
           title: "LOREM IPSUM",
           description:

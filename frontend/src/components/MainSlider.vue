@@ -18,7 +18,7 @@
       <div class="newsletter-form">
         <div class="newsletter-section">
           <img
-            src="@/assets/newsletter-icon.png"
+            src="@/assets/newsletter-icon.webp"
             alt="Newsletter Icon"
             class="newsletter-icon" />
           <p class="newsletter-text desktop">

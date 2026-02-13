@@ -3,11 +3,11 @@ export default {
   data() {
     return {
       logos: [
-        require("@/assets/logo1.png"),
-        require("@/assets/logo2.png"),
-        require("@/assets/logo3.png"),
-        require("@/assets/logo4.png"),
-        require("@/assets/logo5.png"),
+        require("@/assets/logo1.webp"),
+        require("@/assets/logo2.webp"),
+        require("@/assets/logo3.webp"),
+        require("@/assets/logo4.webp"),
+        require("@/assets/logo5.webp"),
       ],
       currentSlide: 0,
       transitionEnabled: true,

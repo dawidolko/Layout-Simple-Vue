@@ -1,7 +1,7 @@
 <template>
   <footer id="kontakt" class="footer">
     <div class="footer-header">
-      <img src="@/assets/footer-icon.png" alt="Footer Icon" class="icon5" />
+      <img src="@/assets/footer-icon.webp" alt="Footer Icon" class="icon5" />
       <h1>KONTAKT</h1>
     </div>
     <hr style="margin-top: 50px" class="header-line-footer" />
@@ -32,7 +32,7 @@
     </div>
     <div class="contact-info slider">
       <button class="contact-arrow left-arrow" @click="prevContactSlide">
-        <img src="@/assets/left-side.png" alt="Left Arrow" />
+        <img src="@/assets/left-side.webp" alt="Left Arrow" />
       </button>
       <div class="contact-slider-container">
         <div
@@ -64,7 +64,7 @@
         </div>
       </div>
       <button class="contact-arrow right-arrow" @click="nextContactSlide">
-        <img src="@/assets/right-side.png" alt="Right Arrow" />
+        <img src="@/assets/right-side.webp" alt="Right Arrow" />
       </button>
     </div>
 
@@ -97,10 +97,10 @@
       </div>
       <div class="social-media">
         <p style="text-align: center; margin-bottom: 20px">SOCIAL MEDIA</p>
-        <img class="facebook" src="@/assets/fb2-icon.png" alt="Facebook" />
-        <img src="@/assets/twitter-icon.png" alt="Twitter" />
-        <img src="@/assets/google-icon.png" alt="Google" />
-        <img src="@/assets/linkedin2-icon.png" alt="LinkedIn" />
+        <img class="facebook" src="@/assets/fb2-icon.webp" alt="Facebook" />
+        <img src="@/assets/twitter-icon.webp" alt="Twitter" />
+        <img src="@/assets/google-icon.webp" alt="Google" />
+        <img src="@/assets/linkedin2-icon.webp" alt="LinkedIn" />
       </div>
       <div class="jobs">
         <p style="text-align: left; margin-bottom: 20px">PRACA</p>

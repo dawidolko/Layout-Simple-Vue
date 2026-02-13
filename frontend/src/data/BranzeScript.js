@@ -3,20 +3,20 @@ export default {
   data() {
     return {
       industries: [
-        { name: "EDUKACJA", image: require("@/assets/branze1.png") },
+        { name: "EDUKACJA", image: require("@/assets/branze1.webp") },
         {
           name: "TRANSPORT & LOGISTYKA",
-          image: require("@/assets/branze2.png"),
+          image: require("@/assets/branze2.webp"),
         },
-        { name: "PRODUKCJA", image: require("@/assets/branze3.png") },
-        { name: "BUDOWNICTWO", image: require("@/assets/branze4.png") },
-        { name: "INSTYTUTY", image: require("@/assets/branze5.png") },
-        { name: "MEDYCYNA", image: require("@/assets/branze6.png") },
+        { name: "PRODUKCJA", image: require("@/assets/branze3.webp") },
+        { name: "BUDOWNICTWO", image: require("@/assets/branze4.webp") },
+        { name: "INSTYTUTY", image: require("@/assets/branze5.webp") },
+        { name: "MEDYCYNA", image: require("@/assets/branze6.webp") },
         { name: "HANDEL", image: require("@/assets/branze7.webp") },
-        { name: "MSP", image: require("@/assets/branze8.png") },
+        { name: "MSP", image: require("@/assets/branze8.webp") },
         {
           name: "ADMINISTRACJA PUBLICZNA",
-          image: require("@/assets/branze9.jpeg"),
+          image: require("@/assets/branze9.webp"),
         },
       ],
       textBoxes: [

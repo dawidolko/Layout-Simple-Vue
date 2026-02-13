@@ -3,7 +3,7 @@ export default {
   data() {
     return {
       images: [
-        require("@/assets/slider1.png"),
+        require("@/assets/slider1.webp"),
         require("@/assets/slider2.webp"),
         require("@/assets/slider3.webp"),
         require("@/assets/slider4.webp"),

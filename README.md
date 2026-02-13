@@ -53,10 +53,10 @@ Layout-Simple-Vue/
 │ ├── 🔧 start.sh # Linux/macOS startup script
 │ └── 📖 README.md # Frontend documentation
 ├── 📁 grafika/ # Screenshots and design files
-│ ├── 🖼️ simple.jpg # Desktop preview
-│ ├── 📱 simple 768.jpg # Tablet preview
-│ ├── 📱 simple 320.jpg # Mobile preview
-│ └── 🎨 \*.psd # Photoshop design files
+│ ├── 🖼️ simple.webp # Desktop preview
+│ ├── 📱 simple 768.webp # Tablet preview
+│ ├── 📱 simple 320.webp # Mobile preview
+│ └── 🎨 *.psd # Photoshop design files
 ├── 📝 CHANGELOG # Version history
 ├── 📄 LICENSE # Project license
 └── 📖 README.md # Main documentation
@@ -217,7 +217,7 @@ npm run dev
 
 ### Desktop View
 
-[<img src="tasks/simple.jpg" width="80%" alt="Desktop Preview"/>](tasks/simple.jpg)
+[<img src="tasks/simple.webp" width="80%" alt="Desktop Preview"/>](tasks/simple.webp)
 
 ## 📖 Component Overview
 

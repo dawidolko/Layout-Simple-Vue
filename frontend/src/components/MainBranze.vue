@@ -1,7 +1,10 @@
 <template>
   <section id="branze" class="industries">
     <div class="industries-header">
-      <img src="@/assets/settings-icon.png" alt="Settings Icon" class="icon1" />
+      <img
+        src="@/assets/settings-icon.webp"
+        alt="Settings Icon"
+        class="icon1" />
       <h1>BRANŻE</h1>
     </div>
     <hr class="header-line" />

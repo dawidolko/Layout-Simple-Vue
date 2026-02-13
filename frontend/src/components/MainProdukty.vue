@@ -1,7 +1,7 @@
 <template>
   <section id="produkty" class="products">
     <div class="products-header">
-      <img src="@/assets/folder-icon.png" alt="Folder Icon" class="icon" />
+      <img src="@/assets/folder-icon.webp" alt="Folder Icon" class="icon" />
       <h1>PRODUKTY</h1>
     </div>
     <hr class="header-line1" />
