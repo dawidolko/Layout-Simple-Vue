@@ -1,4 +1,4 @@
-# Layout-Simple-Vue 
+# Layout-Simple-Vue
 
 > 🚀 **Modern Business Website Layout** - Build responsive corporate websites with Vue.js component architecture and modular design
 
