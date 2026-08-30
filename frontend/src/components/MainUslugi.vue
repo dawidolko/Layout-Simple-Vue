@@ -2,7 +2,7 @@
   <section id="uslugi" class="services">
     <div class="services-header">
       <img src="@/assets/key-icon.webp" alt="Key Icon" class="icon3" />
-      <h1>USŁUGI</h1>
+      <h2>USŁUGI</h2>
     </div>
     <hr class="header-line" />
 

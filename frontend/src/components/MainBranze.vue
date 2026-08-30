@@ -5,7 +5,7 @@
         src="@/assets/settings-icon.webp"
         alt="Settings Icon"
         class="icon1" />
-      <h1>BRANŻE</h1>
+      <h2>BRANŻE</h2>
     </div>
     <hr class="header-line" />
     <div class="industries-grid">

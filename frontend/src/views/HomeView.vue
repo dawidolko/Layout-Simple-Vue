@@ -1,14 +1,25 @@
 <template>
   <div class="home">
-    <MainNavbar />
-    <MainSidebar />
-    <MainSlider />
-    <MainBranze />
-    <MainProdukty />
-    <MainUslugi />
-    <MainAktualnosci />
-    <MainFooter />
-    <MainLogaFirm />
+    <!--
+      First focusable element: lets a keyboard user skip the navigation and
+      land on the page content.
+    -->
+    <a class="skip-link" href="#main-content">Przejdź do treści</a>
+    <header>
+      <MainNavbar />
+      <MainSidebar />
+    </header>
+    <main id="main-content" tabindex="-1">
+      <MainSlider />
+      <MainBranze />
+      <MainProdukty />
+      <MainUslugi />
+      <MainAktualnosci />
+    </main>
+    <footer>
+      <MainFooter />
+      <MainLogaFirm />
+    </footer>
   </div>
 </template>
 

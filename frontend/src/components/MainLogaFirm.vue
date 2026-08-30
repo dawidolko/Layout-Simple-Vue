@@ -1,6 +1,6 @@
 <template>
   <section id="loga-firm" class="logos-slider">
-    <button class="arrow left-arrow" @click="prevSlide">
+    <button class="arrow left-arrow" aria-label="Poprzednie logo" @click="prevSlide">
       <img src="@/assets/left-side.webp" alt="Left Arrow" />
     </button>
     <div class="logos-container">
@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <button class="arrow right-arrow" @click="nextSlide">
+    <button class="arrow right-arrow" aria-label="Następne logo" @click="nextSlide">
       <img src="@/assets/right-side.webp" alt="Right Arrow" />
     </button>
   </section>

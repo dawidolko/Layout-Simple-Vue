@@ -24,7 +24,7 @@
           type="text"
           class="search-input"
           :class="{ expanded: showSearch }"
-          placeholder="Szukaj..." />
+          placeholder="Szukaj..." aria-label="Szukaj w serwisie" />
       </div>
     </div>
   </nav>

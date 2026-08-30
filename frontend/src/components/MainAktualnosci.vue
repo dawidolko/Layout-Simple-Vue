@@ -2,11 +2,11 @@
   <section id="aktualnosci" class="news-section">
     <div class="news-section-header">
       <img src="@/assets/reload-icon.webp" alt="Reload Icon" class="icon4" />
-      <h1>AKTUALNOŚCI</h1>
+      <h2>AKTUALNOŚCI</h2>
     </div>
     <hr class="news-section-line" />
     <div class="news-section-slider">
-      <button class="news-arrow left-arrow" @click="prevNewsSlide">
+      <button class="news-arrow left-arrow" aria-label="Poprzednia aktualność" @click="prevNewsSlide">
         <img src="@/assets/left-side.webp" alt="Left Arrow" />
       </button>
       <div class="news-slider-container">
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-      <button class="news-arrow right-arrow" @click="nextNewsSlide">
+      <button class="news-arrow right-arrow" aria-label="Następna aktualność" @click="nextNewsSlide">
         <img src="@/assets/right-side.webp" alt="Right Arrow" />
       </button>
     </div>

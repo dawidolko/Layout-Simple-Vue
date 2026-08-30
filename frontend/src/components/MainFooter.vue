@@ -2,7 +2,7 @@
   <footer id="kontakt" class="footer">
     <div class="footer-header">
       <img src="@/assets/footer-icon.webp" alt="Footer Icon" class="icon5" />
-      <h1>KONTAKT</h1>
+      <h2>KONTAKT</h2>
     </div>
     <hr style="margin-top: 50px" class="header-line-footer" />
     <div class="contact-info static">
@@ -74,11 +74,11 @@
         <p class="pytanie" style="margin-bottom: 20px">ZADAJ PYTANIE</p>
         <p class="mobile">simple@simple.com.pl</p>
         <form>
-          <input type="text" placeholder="Imię i nazwisko" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Telefon" />
-          <input type="text" placeholder="Temat" />
-          <textarea placeholder="Treść pytania"></textarea>
+          <input type="text" placeholder="Imię i nazwisko" aria-label="Imię i nazwisko" autocomplete="name" />
+          <input type="email" placeholder="Email" aria-label="Adres e-mail" autocomplete="email" />
+          <input type="tel" placeholder="Telefon" aria-label="Numer telefonu" autocomplete="tel" />
+          <input type="text" placeholder="Temat" aria-label="Temat wiadomości" />
+          <textarea placeholder="Treść pytania" aria-label="Treść pytania"></textarea>
           <p>Wybierz rodzaj prezentacji</p>
           <div class="checkboxes-button">
             <div class="checkboxes">
