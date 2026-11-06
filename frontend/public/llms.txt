@@ -1,0 +1,11 @@
+# Simple
+
+> Simple is a demonstration business website layout built with Vue.js by Dawid Olko. It has one Polish page with services, industries, products, news and contact sections, split into components with separate data files.
+
+## Pages
+
+- [Home](https://simplelayout.dawidolko.pl/): the full layout with every section
+
+## Author
+
+- [Dawid Olko](https://dawidolko.pl): Fullstack / AI Developer, author of this project

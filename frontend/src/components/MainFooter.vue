@@ -1,8 +1,8 @@
 <template>
-  <footer id="kontakt" class="footer">
+  <section id="kontakt" class="footer" aria-labelledby="kontakt-heading">
     <div class="footer-header">
       <img src="@/assets/footer-icon.webp" alt="Footer Icon" class="icon5" />
-      <h2>KONTAKT</h2>
+      <h2 id="kontakt-heading">KONTAKT</h2>
     </div>
     <hr style="margin-top: 50px" class="header-line-footer" />
     <div class="contact-info static">
@@ -116,7 +116,7 @@
     </div>
     <hr class="header-line-footer" />
     <p class="back-to-top hover"><a href="#">Powrót na górę strony</a></p>
-  </footer>
+  </section>
 </template>
 
 <script src="@/data/FooterScript.js"></script>

@@ -7,9 +7,15 @@
           :key="index"
           class="slide"
           :class="{ active: index === activeIndex }">
-          <img :src="image" :alt="`Zdjęcie ${index + 1} z galerii`" />
+          <img
+            :src="image"
+            :alt="`Zdjęcie ${index + 1} z galerii`"
+            width="1920"
+            height="870"
+            :loading="index === 0 ? 'eager' : 'lazy'"
+            :fetchpriority="index === 0 ? 'high' : 'auto'" />
           <div class="slider-text">
-            <component :is="index === 0 ? 'h1' : 'p'" class="text1">SIMPLE</component>
+            <component :is="index === activeIndex ? 'h1' : 'p'" class="text1">SIMPLE</component>
             <p class="text2">- z nami biznes jest prostszy!</p>
             <p style="text-align: right">Dowiedz się więcej</p>
           </div>
@@ -30,12 +36,15 @@
         </div>
         <div class="newsletter-controls">
           <div class="slider-indicators">
-            <span
+            <button
               v-for="(image, index) in images"
               :key="index"
+              type="button"
               class="square"
               :class="{ active: index === activeIndex }"
-              @click="setSlide(index)"></span>
+              :aria-label="`Pokaż zdjęcie ${index + 1}`"
+              :aria-current="index === activeIndex ? 'true' : undefined"
+              @click="setSlide(index)"></button>
           </div>
           <button>Zapisz się</button>
         </div>

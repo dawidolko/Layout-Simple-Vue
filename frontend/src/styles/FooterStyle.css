@@ -128,7 +128,7 @@ textarea::placeholder {
 }
 .send {
   background-color: white;
-  color: gray;
+  color: #6b6b6b;
   border: none;
   padding: 10px 25px;
   cursor: pointer;

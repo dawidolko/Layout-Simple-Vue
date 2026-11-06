@@ -2,50 +2,57 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Minimalist business website layout built with Vue.js, split into components with separate data files." />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Layout-Simple | Business Website</title>
-
-    <link rel="icon" type="image/webp" href="logo-icon.webp" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="./styles/global.css" />
-  
-    <link rel="canonical" href="https://simplelayout.dawidolko.pl/" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://simplelayout.dawidolko.pl/" />
-    <meta property="og:title" content="Simple — business website layout" />
-    <meta property="og:description" content="Minimalist business website layout built with Vue.js, split into components with separate data files." />
-    <meta property="og:site_name" content="Simple" />
-    <meta property="og:locale" content="pl_PL" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Simple — business website layout" />
-    <meta name="twitter:description" content="Minimalist business website layout built with Vue.js." />
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Simple",
-        "url": "https://simplelayout.dawidolko.pl",
-        "description": "Minimalist business website layout built with Vue.js.",
-        "author": { "@type": "Person", "name": "Dawid Olko", "url": "https://dawidolko.pl" }
+    <meta name="author" content="Dawid Olko" />
+    <title>Simple | Minimalist Business Website Layout in Vue.js</title>
+    <meta
+      name="description"
+      content="Minimalist business website layout built with Vue.js, split into components with separate data files for services, products and news." />
+    <link rel="icon" type="image/webp" href="/logo-icon.webp" />
+    <link rel="preload" href="/fonts/heebo-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+      @font-face {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/heebo-400-latin-ext.woff2) format("woff2");
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
       }
-    </script>
+      @font-face {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/heebo-400-latin.woff2) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(/fonts/heebo-400-latin-ext.woff2) format("woff2");
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(/fonts/heebo-400-latin.woff2) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
     <script src="/a11y/a11y-panel.js" data-accent="#1d4ed8" defer></script>
   </head>
   <body>
     <noscript>
-      <strong
-        >Sorry, but Layout-Simple doesn't work properly without JavaScript
-        enabled. Please enable it to continue.</strong
-      >
+      <strong>Ta strona wymaga włączonej obsługi JavaScript.</strong>
     </noscript>
 
     <div id="app"></div>

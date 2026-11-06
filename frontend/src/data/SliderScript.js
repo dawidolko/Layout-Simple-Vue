@@ -20,6 +20,8 @@ export default {
     },
   },
   mounted() {
-    setInterval(this.nextSlide, 5000);
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setInterval(this.nextSlide, 5000);
+    }
   },
 };

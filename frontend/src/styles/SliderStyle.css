@@ -98,14 +98,18 @@
   justify-content: center;
   margin-bottom: 10px;
 }
-.square {
+.newsletter-form .square {
   width: 35px;
-  height: 14px;
-  background-color: rgba(255, 255, 255, 0.5);
+  min-width: 0;
+  height: 24px;
+  margin: 0;
+  padding: 5px 0;
+  border: 0;
+  background: rgba(255, 255, 255, 0.5) content-box;
   cursor: pointer;
 }
-.square.active {
-  background-color: #0e3b5a;
+.newsletter-form .square.active {
+  background: #0e3b5a content-box;
 }
 .newsletter-icon {
   width: 50px;
@@ -190,7 +194,12 @@
 }
 @media (max-width: 635px) {
   .slider-text {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
   .slider-indicators {
     display: flex;
@@ -217,8 +226,7 @@
   .newsletter-section {
     min-width: 300px;
   }
-  .square {
+  .newsletter-form .square {
     width: 25px;
-    height: 15px;
   }
 }
