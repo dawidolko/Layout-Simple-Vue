@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://simplelayout.dawidolko.pl/"><img src="docs/readme/banner.webp" alt="Layout Simple: frontend. Content lives in files, not in templates" width="100%"></a>
+</p>
+
 # Layout Simple
 
 > 🧱 **Content lives in files, not in templates** — a Vue 3 business layout where every section reads its own data module
@@ -10,6 +14,8 @@ That split is the whole point of the project: the markup is the shape, the data 
 ![Vue CLI](https://img.shields.io/badge/Vue%20CLI-5-4FC08D?logo=vuedotjs&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-per%20component-1572B6?logo=css3&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+**[Live site](https://simplelayout.dawidolko.pl/)** · [Screenshots](#️-screenshots) · [Getting started](#-getting-started)
 
 ---
 
@@ -91,6 +97,12 @@ npm run lint    # ESLint over the project
 
 ---
 
+## ♿ Accessibility
+
+An accessibility panel in the corner of every page changes text size, contrast, font and motion, and remembers the choice on the device. It sits on top of the markup and does not replace accessible markup.
+
+---
+
 ## 📁 Project Structure
 
 ```
@@ -113,3 +125,11 @@ Layout-Simple-Vue/
 ## 📄 License
 
 MIT © [Dawid Olko](https://dawidolko.pl)
+
+---
+
+## 👨‍💻 Author
+
+**Dawid Olko** · Fullstack / AI Developer
+
+[Portfolio](https://olkodawid.dawidolko.pl) · [CV](https://cv.dawidolko.pl) · [LinkedIn](https://www.linkedin.com/in/dawidolko/) · [GitHub](https://github.com/dawidolko)
