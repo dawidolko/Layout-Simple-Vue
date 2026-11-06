@@ -107,7 +107,9 @@ async function capture(browser, origin, address) {
   await page.waitForFunction((id) => document.getElementById(id)?.querySelector("h1"), site.rootId, {
     timeout: 20000,
   });
-  /* Scrolling once lets content that waits for the viewport render as well. */
+  /*
+    Scrolling once lets content that waits for the viewport render as well.
+  */
   await page.evaluate(async () => {
     const step = window.innerHeight;
     for (let y = 0; y < document.documentElement.scrollHeight; y += step) {

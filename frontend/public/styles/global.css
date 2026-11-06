@@ -35,3 +35,13 @@ h1 {
     width: 80%;
   }
 }
+
+[id] {
+  scroll-margin-top: 100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

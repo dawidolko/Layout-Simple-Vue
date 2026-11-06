@@ -8,6 +8,7 @@ export default {
   methods: {
     toggleSearch() {
       this.showSearch = !this.showSearch;
+      if (this.showSearch) this.$nextTick(() => this.$refs.search.focus());
     },
   },
 };

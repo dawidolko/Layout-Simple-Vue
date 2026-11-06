@@ -58,6 +58,9 @@ h1 {
 }
 
 .overlay {
+  padding: 4px;
+  overflow-wrap: anywhere;
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -118,5 +121,17 @@ h1 {
 @media (max-width: 635px) {
   .industries-grid {
     width: 80%;
+  }
+}
+
+@media (max-width: 635px) {
+  .industries-grid {
+    width: calc(100% - 32px);
+    gap: 8px;
+  }
+  .overlay span {
+    font-size: 12px;
+    line-height: 1.2;
+    hyphens: auto;
   }
 }

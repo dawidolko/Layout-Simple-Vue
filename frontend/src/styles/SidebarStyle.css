@@ -16,6 +16,18 @@
   width: 50px;
 }
 
+.toggle-open {
+  display: none;
+}
+
+.sidebar.collapsed .toggle-open {
+  display: inline;
+}
+
+.sidebar.collapsed .toggle-close {
+  display: none;
+}
+
 .sidebar-content {
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -25,6 +37,7 @@
 }
 
 .sidebar.collapsed .sidebar-content {
+  visibility: hidden;
   opacity: 0;
 }
 
@@ -88,14 +101,14 @@ hr {
   border-radius: 50%;
   width: 50px;
   height: 30px;
-  color: rgba(95, 113, 125, 0.656);
+  color: #4a5b66;
   cursor: pointer;
   outline: none;
 }
 
 .toggle-button:hover {
   background-color: white;
-  color: rgba(95, 113, 125, 0.656);
+  color: #4a5b66;
 }
 @media (max-width: 1250px) {
   .sidebar-content {
@@ -123,5 +136,39 @@ hr {
   }
   .toggle-button {
     top: 40%;
+  }
+}
+
+/*
+  Below this width the open menu would cover the page, so it starts closed and leaves
+  only its toggle on screen.
+*/
+@media (max-width: 1250px) {
+  .sidebar:not(.expanded) {
+    width: 0;
+    padding: 0;
+    border: 0;
+    overflow: visible;
+  }
+
+  .sidebar:not(.expanded) .sidebar-content {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .sidebar:not(.expanded) .toggle-button {
+    right: -44px;
+    width: 44px;
+    height: 44px;
+    border-radius: 0 8px 8px 0;
+    color: #0e3b5a;
+  }
+
+  .sidebar:not(.expanded) .toggle-open {
+    display: inline;
+  }
+
+  .sidebar:not(.expanded) .toggle-close {
+    display: none;
   }
 }

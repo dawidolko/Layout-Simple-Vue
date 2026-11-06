@@ -9,19 +9,23 @@
           <li><a href="#branze">Branże</a></li>
           <li><a href="#produkty">Produkty</a></li>
           <li><a href="#uslugi">Usługi</a></li>
-          <li><a href="#aktualnosci">Aktywności</a></li>
+          <li><a href="#aktualnosci">Aktualności</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
           <li><a href="#referencje">Referencje</a></li>
         </ul>
       </div>
       <div class="search-container">
-        <img
-          src="@/assets/search-icon.webp"
-          alt="Search"
-          class="search-icon"
-          @click="toggleSearch" />
+        <button
+          type="button"
+          class="search-button"
+          aria-label="Szukaj"
+          :aria-expanded="showSearch ? 'true' : 'false'"
+          @click="toggleSearch">
+          <img src="@/assets/search-icon.webp" alt="" class="search-icon" />
+        </button>
         <input
-          type="text"
+          ref="search"
+          type="search"
           class="search-input"
           :class="{ expanded: showSearch }"
           placeholder="Szukaj..." aria-label="Szukaj w serwisie" />

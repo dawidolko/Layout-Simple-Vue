@@ -1,25 +1,25 @@
 <template>
-  <section id="loga-firm" class="logos-slider">
-    <button class="arrow left-arrow" aria-label="Poprzednie logo" @click="prevSlide">
-      <img src="@/assets/left-side.webp" alt="Left Arrow" />
-    </button>
-    <div class="logos-container">
+  <section id="referencje" class="logos-slider">
+    <AppCarousel
+      name="logos"
+      label="Logotypy firm"
+      previous-label="Poprzednie logo"
+      next-label="Następne logo">
       <div
-        ref="wrapper"
-        class="logos-wrapper"
-        :style="{
-          transform: `translateX(${currentSlide * -20}%)`,
-          transition: transitionEnabled ? 'transform 0.5s ease' : 'none',
-        }"
-        @transitionend="handleTransitionEnd">
-        <div class="logo" v-for="(logo, index) in logos" :key="index">
-          <img :src="logo" alt="Company Logo" />
-        </div>
+        v-for="(logo, index) in slides"
+        :key="index"
+        class="logo"
+        :data-copy="logo.copy ? '' : null"
+        :aria-hidden="logo.copy ? 'true' : null">
+        <img
+          :src="logo.src"
+          :alt="logo.copy ? '' : logo.name"
+          :width="logo.width"
+          :height="logo.height"
+          loading="lazy"
+          draggable="false" />
       </div>
-    </div>
-    <button class="arrow right-arrow" aria-label="Następne logo" @click="nextSlide">
-      <img src="@/assets/right-side.webp" alt="Right Arrow" />
-    </button>
+    </AppCarousel>
   </section>
 </template>
 

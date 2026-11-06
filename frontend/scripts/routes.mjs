@@ -1,4 +1,6 @@
-/* The route table the prerender step works from. */
+/*
+  The route table the prerender step works from.
+*/
 const origin = "https://simplelayout.dawidolko.pl";
 
 export const site = {

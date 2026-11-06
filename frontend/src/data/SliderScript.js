@@ -1,5 +1,8 @@
+import AppCarousel from "@/components/AppCarousel.vue";
+
 export default {
   name: "MainSlider",
+  components: { AppCarousel },
   data() {
     return {
       images: [
@@ -8,20 +11,18 @@ export default {
         require("@/assets/slider3.webp"),
         require("@/assets/slider4.webp"),
       ],
-      activeIndex: 0,
+      email: "",
+      notice: "",
     };
   },
   methods: {
-    setSlide(index) {
-      this.activeIndex = index;
+    /*
+      This is a demonstration layout with no mail service behind it, so the form says
+      so rather than pretending that the address was saved.
+    */
+    subscribe() {
+      this.notice = "To wersja demonstracyjna: adres nie został zapisany.";
+      this.email = "";
     },
-    nextSlide() {
-      this.activeIndex = (this.activeIndex + 1) % this.images.length;
-    },
-  },
-  mounted() {
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setInterval(this.nextSlide, 5000);
-    }
   },
 };

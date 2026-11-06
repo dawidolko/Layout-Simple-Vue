@@ -1,0 +1,60 @@
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-viewport {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  /*
+    Vertical swipes keep scrolling the page. Only horizontal ones reach the carousel.
+  */
+  touch-action: pan-y pinch-zoom;
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel-viewport:active {
+  cursor: grabbing;
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+}
+
+.carousel-track img {
+  -webkit-user-drag: none;
+}
+
+.carousel-arrow {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 7px 13px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.carousel-arrow img {
+  display: block;
+  width: 17px;
+  height: 30px;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.carousel-arrow:focus-visible,
+.carousel-dot:focus-visible,
+.carousel-pause:focus-visible {
+  outline: 3px solid #0e3b5a;
+  outline-offset: 2px;
+}

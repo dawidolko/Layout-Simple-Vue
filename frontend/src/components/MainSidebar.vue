@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidebar" :class="{ collapsed: isCollapsed }">
+  <aside class="sidebar" :class="{ collapsed: isCollapsed === true, expanded: isCollapsed === false }">
     <div class="sidebar-content">
       <div class="section">
         <h2>Menu</h2>
@@ -18,12 +18,12 @@
       <hr style="max-width: 75%; margin-bottom: 20px" />
       <div class="section">
         <ul>
-          <li><a href="#ofirmie">O firmie</a></li>
-          <li><a href="#nagrody">Nagrody</a></li>
-          <li><a href="#relacje">Relacje inwestorskie</a></li>
-          <li><a href="#partnerzy">Partnerzy</a></li>
-          <li><a href="#kariera">Kariera</a></li>
-          <li><a href="#stefaklienta">Strefa klienta</a></li>
+          <li><a href="#branze">O firmie</a></li>
+          <li><a href="#referencje">Nagrody</a></li>
+          <li><a href="#kontakt">Relacje inwestorskie</a></li>
+          <li><a href="#referencje">Partnerzy</a></li>
+          <li><a href="#kontakt">Kariera</a></li>
+          <li><a href="#kontakt">Strefa klienta</a></li>
         </ul>
       </div>
       <hr style="max-width: 75%; margin-bottom: 30px" />
@@ -39,9 +39,14 @@
           class="social-icon" />
       </div>
     </div>
-    <button class="toggle-button" @click="toggleSidebar">
-      <span v-if="!isCollapsed">&#9664;</span>
-      <span v-else>&#9654;</span>
+    <button
+      class="toggle-button"
+      type="button"
+      aria-label="Menu boczne"
+      :aria-expanded="isCollapsed === false ? 'true' : isCollapsed === true ? 'false' : undefined"
+      @click="toggleSidebar">
+      <span class="toggle-close" aria-hidden="true">&#9664;</span>
+      <span class="toggle-open" aria-hidden="true">&#9654;</span>
     </button>
   </aside>
 </template>

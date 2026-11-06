@@ -1,84 +1,50 @@
 <template>
   <section id="kontakt" class="footer" aria-labelledby="kontakt-heading">
     <div class="footer-header">
-      <img src="@/assets/footer-icon.webp" alt="Footer Icon" class="icon5" />
+      <img src="@/assets/footer-icon.webp" alt="" class="icon5" />
       <h2 id="kontakt-heading">KONTAKT</h2>
     </div>
     <hr style="margin-top: 50px" class="header-line-footer" />
     <div class="contact-info static">
-      <div class="contact-box">
-        <p>SIMPLE S.A.</p>
-        <p class="margin">ul. Bronisława Czecha 49/51</p>
-        <p>04-555 Warszawa</p>
-        <p class="margin">tel.: (22) 812-58-98</p>
-        <p>fax.: (22) 815-49-83</p>
-        <p class="margin">simple@simple.com.pl</p>
-      </div>
-      <div class="contact-box">
-        <p>SIMPLE S.A. - Ośrodek Badawczo-Rozwojowy Lublin</p>
-        <p class="margin">ul. Wolska 11A/4</p>
-        <p>20-411 Lublin</p>
-        <p class="margin">tel. kom: +48 696 001 286</p>
-        <p class="margin">lublin@simple.com.pl</p>
-      </div>
-      <div class="contact-box">
-        <p>SIMPLE S.A. - Oddział Rzeszów</p>
-        <p class="margin">ul. Rejtana 53A</p>
-        <p>35-326 Rzeszów</p>
-        <p class="margin">tel. kom.: +48 696 001 235</p>
-        <p>fax.: (17) 865 42 41</p>
-        <p class="margin">rzeszow@simple.com.pl</p>
+      <div v-for="office in offices" :key="office.name" class="contact-box">
+        <p>{{ office.name }}</p>
+        <p
+          v-for="(line, index) in office.lines"
+          :key="index"
+          :class="{ margin: line.gap }">
+          {{ line.text }}
+        </p>
       </div>
     </div>
-    <div class="contact-info slider">
-      <button class="contact-arrow left-arrow" @click="prevContactSlide">
-        <img src="@/assets/left-side.webp" alt="Left Arrow" />
-      </button>
-      <div class="contact-slider-container">
-        <div
-          class="contact-slides-wrapper"
-          :style="{ transform: 'translateX(-' + contactIndex * 100 + '%)' }">
-          <div class="contact-box">
-            <p>SIMPLE S.A.</p>
-            <p class="margin">ul. Bronisława Czecha 49/51</p>
-            <p>04-555 Warszawa</p>
-            <p class="margin">tel.: (22) 812-58-98</p>
-            <p>fax.: (22) 815-49-83</p>
-            <p class="margin">simple@simple.com.pl</p>
-          </div>
-          <div class="contact-box">
-            <p>SIMPLE S.A. - Ośrodek Badawczo-Rozwojowy Lublin</p>
-            <p class="margin">ul. Wolska 11A/4</p>
-            <p>20-411 Lublin</p>
-            <p class="margin">tel. kom: +48 696 001 286</p>
-            <p class="margin">lublin@simple.com.pl</p>
-          </div>
-          <div class="contact-box">
-            <p>SIMPLE S.A. - Oddział Rzeszów</p>
-            <p class="margin">ul. Rejtana 53A</p>
-            <p>35-326 Rzeszów</p>
-            <p class="margin">tel. kom.: +48 696 001 235</p>
-            <p>fax.: (17) 865 42 41</p>
-            <p class="margin">rzeszow@simple.com.pl</p>
-          </div>
-        </div>
+    <AppCarousel
+      class="contact-info contact-carousel"
+      name="contact"
+      label="Adresy biur"
+      previous-label="Poprzednie biuro"
+      next-label="Następne biuro"
+      :options="{ align: 'center' }">
+      <div v-for="office in offices" :key="office.name" class="contact-box">
+        <p>{{ office.name }}</p>
+        <p
+          v-for="(line, index) in office.lines"
+          :key="index"
+          :class="{ margin: line.gap }">
+          {{ line.text }}
+        </p>
       </div>
-      <button class="contact-arrow right-arrow" @click="nextContactSlide">
-        <img src="@/assets/right-side.webp" alt="Right Arrow" />
-      </button>
-    </div>
+    </AppCarousel>
 
     <hr class="header-line-footer" />
     <div class="contact-sections">
       <div class="contact-form">
         <p class="pytanie" style="margin-bottom: 20px">ZADAJ PYTANIE</p>
         <p class="mobile">simple@simple.com.pl</p>
-        <form>
-          <input type="text" placeholder="Imię i nazwisko" aria-label="Imię i nazwisko" autocomplete="name" />
-          <input type="email" placeholder="Email" aria-label="Adres e-mail" autocomplete="email" />
+        <form @submit.prevent="sendQuestion">
+          <input type="text" placeholder="Imię i nazwisko" aria-label="Imię i nazwisko" autocomplete="name" required />
+          <input type="email" placeholder="Email" aria-label="Adres e-mail" autocomplete="email" required />
           <input type="tel" placeholder="Telefon" aria-label="Numer telefonu" autocomplete="tel" />
           <input type="text" placeholder="Temat" aria-label="Temat wiadomości" />
-          <textarea placeholder="Treść pytania" aria-label="Treść pytania"></textarea>
+          <textarea placeholder="Treść pytania" aria-label="Treść pytania" required></textarea>
           <p>Wybierz rodzaj prezentacji</p>
           <div class="checkboxes-button">
             <div class="checkboxes">
@@ -93,6 +59,7 @@
             </div>
             <button class="send" type="submit">Wyślij</button>
           </div>
+          <p v-if="notice" class="form-notice" role="status">{{ notice }}</p>
         </form>
       </div>
       <div class="social-media">
@@ -108,14 +75,14 @@
           Zainteresowane osoby prosimy o przesłanie CV wraz z listem
           motywacyjnym na adres:
         </p>
-        <p class="paragraph">praca@simple.com.pl</p>
+        <p class="paragraph"><a href="mailto:praca@simple.com.pl">praca@simple.com.pl</a></p>
         <p class="hover">
-          <a href="#">Zobacz nasze oferty...</a>
+          <a href="mailto:praca@simple.com.pl">Zobacz nasze oferty...</a>
         </p>
       </div>
     </div>
     <hr class="header-line-footer" />
-    <p class="back-to-top hover"><a href="#">Powrót na górę strony</a></p>
+    <p class="back-to-top hover"><a href="#main-content">Powrót na górę strony</a></p>
   </section>
 </template>
 
