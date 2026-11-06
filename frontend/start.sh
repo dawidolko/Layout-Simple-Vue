@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Instalacja zaleznosci..."
-npm install || { echo "Wystapil blad podczas instalacji zaleznosci."; exit 1; }
-echo "Uruchamianie projektu..."
+echo "Installing dependencies..."
+npm install || { echo "Dependency installation failed."; exit 1; }
+echo "Starting the project..."
 npm start
