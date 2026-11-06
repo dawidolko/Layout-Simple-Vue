@@ -56,6 +56,14 @@ That split is the whole point of the project: the markup is the shape, the data 
 
 ---
 
+## 🎬 Demo
+
+<p align="center">
+  <img src="docs/readme/demo.webp" alt="Layout Simple: a short scroll through the live site" width="80%">
+</p>
+
+---
+
 ## 🛠️ Technology Stack
 
 | Technology     | Version | Role                                            |
